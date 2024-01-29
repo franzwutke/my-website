@@ -1,4 +1,4 @@
-/******************************************/
+/******************************************************/
 /* General Styling */
 
 * {
@@ -9,24 +9,30 @@
     font-family: "Arial", Helvetica, sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: "Ubuntu";
+h1 {
+    font-size: 60px;
+    font-family: 'Noto Serif', serif;
+}
+
+h2, h3 {
+    font-family: "Ubuntu", sans-serif;
 }
 
 body {
     margin: 0px;
 }
-/*****************************************/
+/******************************************************/
 /*Specific Stylings */
 
 .header {
     padding: 48px 16px;
     text-align: center;
-    background-color: #70c28f;
+    background-color: #aab8ae;
 }
 
 .main {
     max-width: 800px;
     margin: 0 auto;
     padding: 16px;
+    background-color: blanchedalmond;
   }
