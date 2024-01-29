@@ -15,7 +15,13 @@ h1 {
 }
 
 h2, h3 {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', serif;
+}
+
+i {
+    font-size: 30px;
+    font-family: 'Honk', system-ui;
+
 }
 
 body {
@@ -31,8 +37,8 @@ body {
 }
 
 .main {
-    max-width: 800px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 48px 16px;
     background-color: blanchedalmond;
-  }
+}
