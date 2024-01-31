@@ -17,7 +17,7 @@ h1 {
 }
 
 h2, h3 {
-    font-family: Arial, Helvetica, serif;
+    font-family: 'Noto Serif', serif;
 }
 
 i {
@@ -40,17 +40,17 @@ body {
 
 .nav-link {
     padding: 4px 8px;
-    color: black;
+    color: rgb(13, 0, 255);
   }
   
   .nav-link:hover {
     color: black;
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
   }
   
   .nav-link:active {
-    color: white;
-    background-color: grey;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
   }
   
   .nav-link + .nav-link {
@@ -63,3 +63,16 @@ body {
     padding: 48px 16px;
     background-color: blanchedalmond;
 }
+
+.main > * + * {
+    margin-top: 48px;
+  }
+  
+  .main > * {
+    border-top: 2px solid grey;
+  }
+
+.main > *:first-child {
+    border-top-color: black;
+  }
+  
