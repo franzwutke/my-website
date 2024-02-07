@@ -4,24 +4,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Website of Franz Wutke</title>
+	<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"/>
 	<link rel="stylesheet" href="style.css">
 	<meta name="description" contend="My CV"/>
 	<meta name="autor" contend="franz">
 </head>
   <body>
 	<header class="header">
-		<H1>Franz Wutke</H1>
-		<i>The way to structur HTML and CSS with Accessibility</i>
-		<nav>
+		<div class="header-group">
+			<h1 class="main-heading">Franz Wutke</h1>
+			<i class="mission">The way to structur HTML and CSS with Accessibility</i>
+		</div>
+		<nav class="navigation">
 			<a class="nav-link" href="#profil">Profil</a>
 			<a class="nav-link" href="#experience">Experience</a>
 			<a class="nav-link" href="#skills">Skills</a>
 			<a class="nav-link" href="#contact">Contact</a>
 		</nav>
+		<aside class="hire-me">Hire Me</aside>
 	</header>    
 	<main class="main">
 		<article id="Profil">
-			<h2>Profil</h2>
+			<h2 class="article-heading">Profil</h2>
 			<p>Hello, my name is Franz Wutke, I am 33 years old and I was born in Dresden.
 			</p> 
 			  I am motivated to learn new knowledge about HTML, CSS and JavaScript. <br>
@@ -30,11 +34,11 @@
 			</p>
 		</article>
 		<article id="experience">
-			<h2>Experience</h2>
+			<h2 class="article-heading">Experience</h2>
 			<section>
 				<header>
-					<h3>Coding Bootcamps EU - Studend</h3>
-					<p>January 2024 - Present</p>
+					<h3 class="experience-heading">Coding Bootcamps EU - Studend</h3>
+					<p class="experience-subheading">January 2024 - Present</p>
 				</header>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 					Repellat nemo aliquid debitis quas minima odit architecto 
@@ -43,17 +47,16 @@
 			</section>		
 			<section>
 				<header>
-					<h3>Deadler -  Manufacturing of tarpaulin materials and films
-					</h3>
-				    <p>Maerz 2022 - November 2023</p>
+					<h3 class="experience-heading">Deadler -  Manufacturing of tarpaulin materials and films</h3>
+				    <p class="experience-subheading">Maerz 2022 - November 2023</p>
 				</header>
 			    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 					Provident facilis numquam reiciendis deleniti esse explicabo.</p>
 			</section>	
 			<section>
 				<header>
-					<h3>Construction and finishing trades in the craft sector</h3>
-				    <p>2008 - 2022</p>
+					<h3 class="experience-heading">Construction and finishing trades in the craft sector</h3>
+				    <p class="experience-subheading">2008 - 2022</p>
 				</header>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing 
 					elit. Harum impedit eaque rem reiciendis quae dolore 
@@ -61,7 +64,7 @@
 			</section>
 		</article>
 		<article id="skills">
-			<h2>Skills</h2>
+			<h2 class="article-heading">Skills</h2>
 			<section>
 				<h3>soft skills</h3>
 				<ul>
@@ -80,12 +83,19 @@
 			</section>	   
 		</article>
 		<article id="contact">
-			<h2>Contact</h2>
+			<h2 class="article-heading">Contact</h2>
 			<ol>
 				<li>Phone: 01786549542</li>
 				<li>E-mail:<a href="mailto:wutke1990@gmail.com">wutke1990@gmail.com</a></li>
 			</ol>
 		</article>
 	</main>
+	<footer class="footer">
+		<p class="footer-text">
+		  Did you like my CV?
+		  <a class="footer-link" href="mailto:wutke1990@gmail.com"
+			>Contact me</a>
+		</p>
+	  </footer>
   </body>
 </html>
