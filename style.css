@@ -68,12 +68,8 @@ body {
     padding: 4rem 1.5rem;
     padding-top: 4rem;
     text-align: center;
-    background: rgb(0,0,0);
-    background: rgb(0,0,0);
-    background: -moz-linear-gradient(156deg, rgba(0,0,0,1) 0%, rgba(10,42,19,0.9486388305322129) 10%, rgba(16,124,47,0.8505996148459384) 35%, rgba(4,154,47,0.8926164215686274) 50%, rgba(16,124,47,0.8505996148459384) 65%, rgba(10,42,19,0.9514399509803921) 90%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
-    background: -webkit-linear-gradient(156deg, rgba(0,0,0,1) 0%, rgba(10,42,19,0.9486388305322129) 10%, rgba(16,124,47,0.8505996148459384) 35%, rgba(4,154,47,0.8926164215686274) 50%, rgba(16,124,47,0.8505996148459384) 65%, rgba(10,42,19,0.9514399509803921) 90%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
-    background: linear-gradient(156deg, rgba(0,0,0,1) 0%, rgba(10,42,19,0.9486388305322129) 10%, rgba(16,124,47,0.8505996148459384) 35%, rgba(4,154,47,0.8926164215686274) 50%, rgba(16,124,47,0.8505996148459384) 65%, rgba(10,42,19,0.9514399509803921) 90%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#00d4ff",GradientType=1);
+    background: radial-gradient(circle, rgba(0,255,15,0.34079569327731096) 0%, rgba(14,166,57,1) 56%, rgba(23,201,74,0.5144651610644257) 56%, rgba(16,124,47,0.8505996148459384) 79%, rgba(0,0,0,1) 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ff0f",endColorstr="#000000",GradientType=1);
     position: relative;
 }
 
@@ -97,8 +93,8 @@ body {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  padding: 0.50rem;
-  border-radius: 0,50rem;
+  padding: 0.5rem;
+  border-radius: 0,25rem;
   background: rgb(89, 239, 30);
   color: black;
 }
@@ -156,7 +152,6 @@ body {
     max-width: 60ch;
     margin: 0 auto;
     padding: 1rem;
-    background-color: rgb(153, 181, 160);
 }
 
 .main > * + * {
@@ -170,12 +165,12 @@ body {
   }
   
   .main > * {
-    border-top: 0,125px solid rgb(0, 0, 0);
+    border-top: solid;
     padding: 0 1rem;
   }
 
 .main > *:first-child {
-    border-top-color: rgb(31, 116, 47);
+    border-top: 1px rgb(31, 116, 47);
     }
 
   .experience-subheading {
