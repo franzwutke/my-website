@@ -59,10 +59,31 @@ i {
 }
 
 body {
-    margin: 0px;
+    --background-color: rgb(255, 255, 255);
+    --text-color: black;
+    --accent-color: rgb(3, 148, 47);
+    --accent-text-color: rgb(35, 10, 10);
+    --nav-link-active-bg-color: rgb(255, 0, 0);
+  
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
-/******************************************************/
+
+*::selection {
+  background-color: var(--accent-color);
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: var(--text-color);
+}
+
 /*Specific Stylings */
+/******************************************************/
 
 .header {
     padding: 4rem 1.5rem;
@@ -94,8 +115,8 @@ body {
   right: 1rem;
   top: 1rem;
   padding: 0.5rem;
-  border-radius: 0,25rem;
-  background: rgb(89, 239, 30);
+  border-radius: 8px;
+  background: var(--accent-color);
   color: black;
 }
 
@@ -114,10 +135,14 @@ body {
   }
 }
 
-.navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.nav-link {
+    display: inline-block;
+    font-size: 100%;
+    padding: 0.25em 0.5em;
+    border-radius: 8px;
+    font-family: sans-serif;
+    background-color: rgb(177, 247, 177);
+    transition: background-color .5s
 }
 
 @media screen and (min-width: 768px) {
@@ -126,20 +151,21 @@ body {
     justify-content: center;
   }
 }
-
-.nav-link {
-    padding: 0,25rem 0,5rem;
-    color: rgb(0, 0, 0);
-  }
   
   .nav-link:hover {
-    color: black;
-    background-color: rgb(9, 255, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 79, 0);
   }
   
   .nav-link:active {
     color: rgb(255, 0, 0);
     background-color: rgb(0, 0, 0);
+  }
+
+  .nav-link:focus {
+      background-color: var(--accent-color);
+      outline-color: var(--accent-text-color);
+      outline-style: dotted;
   }
   
   @media screen and (min-width: 768px) {
@@ -165,17 +191,13 @@ body {
   }
   
   .main > * {
-    border-top: solid;
+    border-top: 0.25rem solid var(--accent-color);
     padding: 0 1rem;
   }
 
 .main > *:first-child {
-    border-top: 1px rgb(31, 116, 47);
+    border-top: none;
     }
-
-  .experience-subheading {
-    display: inline-block;
-  }
 
   .experience-heading {
     display: flex;
@@ -198,8 +220,9 @@ body {
 
   .footer {
     margin-top: 3rem;
-    background-color: rgb(33, 102, 50);
-    padding: 2rem;
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+    padding: 3rem;
   }
   
   .footer-text {
@@ -207,7 +230,12 @@ body {
     margin: 0;
   }
   
-  .footer-link {
-    color: black;
-  }
+  .footer-link,
+  .footer-link:link,
+  .footer-link:hover,
+  .footer-link:active,
+  .footer-link:visited {
+    color: var(--accent-text-color);
+}
+
   
