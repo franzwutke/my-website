@@ -88,9 +88,8 @@ a:active {
 .header {
     padding: 4rem 1.5rem;
     padding-top: 4rem;
-    text-align: center;
+    text-align: center; 
     background: radial-gradient(circle, rgba(0,255,15,0.34079569327731096) 0%, rgba(14,166,57,1) 56%, rgba(23,201,74,0.5144651610644257) 56%, rgba(16,124,47,0.8505996148459384) 79%, rgba(0,0,0,1) 93%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ff0f",endColorstr="#000000",GradientType=1);
     position: relative;
 }
 
@@ -111,13 +110,22 @@ a:active {
 }
 
 .hire-me {
-  position: absolute;
+  display: inline-block;
   right: 1rem;
   top: 1rem;
   padding: 0.5rem;
   border-radius: 8px;
-  background: var(--accent-color);
-  color: black;
+  background-color: green;
+  transform-origin: top right;
+  transition: transform 1s;
+}
+
+.header:hover .hire-me {
+  transform: scale(1.5);
+}
+
+.header:fokus-within .hire-me {
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 992px) {
@@ -142,7 +150,7 @@ a:active {
     border-radius: 8px;
     font-family: sans-serif;
     background-color: rgb(177, 247, 177);
-    transition: background-color .5s
+    transition: .5s
 }
 
 @media screen and (min-width: 768px) {
@@ -154,7 +162,7 @@ a:active {
   
   .nav-link:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(34, 79, 0);
+    background-color: rgb(16, 133, 40);
   }
   
   .nav-link:active {
@@ -165,7 +173,6 @@ a:active {
   .nav-link:focus {
       background-color: var(--accent-color);
       outline-color: var(--accent-text-color);
-      outline-style: dotted;
   }
   
   @media screen and (min-width: 768px) {
